@@ -1,0 +1,1 @@
+let up=document.querySelector(".up");onscroll=()=>{scrollY>=200?up.style.display="flex":up.style.display="none"};up.onclick=function(){scroll({top:0,behavior:"smooth",});}
