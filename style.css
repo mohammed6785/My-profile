@@ -238,28 +238,3 @@ footer .copy-right ion-icon {
   }
 }
 }
-
-
-svg {
- width: 400px; 
- height: 100px;
-}
-svg text {
- animation: stroke 5s infinite alternate;
- stroke-width: 2;
- stroke: #EE7600;
-}
-@keyframes stroke {
- 0%   {
-  fill: rgba(238,118,0,0); stroke: rgba(238,118,0,1);
-  stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
- }
- 70%  {fill: rgba(238,118,0,0); stroke: rgba(238,118,0,1); }
- 80%  {fill: rgba(238,118,0,0); stroke: rgba(238,118,0,1); stroke-width: 3; }
- 100% {
-  fill: rgba(238,118,0,1); stroke: rgba(238,118,0,0);
-  stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
- }
-}
-
-.wrapper {background-color: transparent};
