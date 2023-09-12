@@ -71,10 +71,6 @@ header .container {
   h1 {
     display: flex;
     flex-direction: column;
-    margin-top: 132px !important;
-  }
-  .landing .text img {
-    top:0 px !important;
   }
   .service .text {
     padding: 20px 0 !important;
@@ -255,10 +251,7 @@ header a.active {
   width: 125px;
   height: 125px;
   border-radius: 50%; 
-  position: absolute;
-  left: 50%; 
-  top: -130px;
-  transform: translateX(-50%) 
+  margin-top: 15px;
 }
 .service {
   padding: 50px; 
