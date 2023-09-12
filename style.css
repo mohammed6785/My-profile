@@ -1,4 +1,212 @@
-left: 80%;  
+:root {
+  --main-color: #ee7600;
+  --text-color: #fff;
+}
+/* End variables */
+
+/* Stert Global Rolls */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none; 
+}
+ul {
+  list-style: none;
+}
+h1 {
+  font-size: 5rem !important;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-top: 30px; 
+  display: flex; 
+  justify-content: center; 
+  color: var(--text-color);
+}
+h1 span {
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  font-family: 'Sail', cursive;
+  color: var(--main-color);
+}
+h2 {
+  font-weight: 700;
+  color: var(--text-color);
+  text-align: center; 
+  font-size: 3.5rem;
+}
+h3 {
+ font-size: 2.4rem;
+ font-weight: 700;
+ color: var(--text-color);
+ word-spacing: -2px;
+ margin-bottom: 1rem; 
+ }
+.color {
+  color: #556b2f;
+}
+header {
+  position: absolute; 
+  width: 100%; 
+  z-index: 2; 
+}
+header .container {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  padding: 25px 100px;
+  width: 100%; 
+  border-bottom: 2px solid var(--text-color); 
+}
+@media (max-width: 767px) {
+  .logo {
+    display: none; 
+  }
+  .header .container {
+    justify-content: center; 
+  }
+  h1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .service .text {
+    padding: 20px 0 !important;
+    text-align: center; 
+  }
+  .projects,
+  .service {
+    padding: 60px 20px !important; 
+  }
+}
+header nav {
+  color: var(--main-color);
+}
+header nav ul{
+  display: flex;
+  align-items: center; 
+  gap: 0 30px; 
+}  
+header a {
+  color: var(--text-color); 
+  font-size: 1.2rem;
+}
+header a.active {
+  color: var(--main-color);
+}
+.logo a {
+  font-size: 25px;
+  display: block; 
+}
+.logo span {
+  color: var(--main-color);
+}
+.up {
+  position: fixed; 
+  right: 15px;
+  bottom: 15px;
+  color: var(--text-color); 
+  background-color: #000000; 
+  border: none;
+  width: 30px;
+  height: 30px; 
+  padding: 3px; 
+  border-radius: 50%; 
+  z-index: 2; 
+  display: none;
+  align-items: center;
+  justify-content: center; 
+}
+.up ion-icon {
+  font-size: 1.2rem;
+}
+.landing {
+  display: flex;
+  align-items: center;
+  height: 100vh; 
+  justify-content: center; 
+  padding: 80px 80px 0 80px; 
+  position: relative; 
+  background: url(152881.jpg) no-repeat; 
+  background-size: cover; 
+}
+.landing .layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 80%);
+}
+.landing .leaves {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  }
+
+.landing img {
+  position: absolute; 
+  top: -90px;
+}
+.landing .leaves img:nth-child(1) {
+  animation-delay: -7s;
+  animation: animate 15s linear infinite;
+  left: 10%;  
+}
+.landing .leaves img:nth-child(2) {
+  left: 20%;  
+  animation-delay: 10s;
+  animation: animate 5s linear infinite;
+}
+.landing .leaves img:nth-child(3) {
+  animation: animate 13s linear infinite;
+  left: 30%;  
+}
+.landing .leaves img:nth-child(4) {
+  left: 40%;  
+  animation: animate 8s linear infinite;
+  animation-delay: -5s;
+}
+.landing .leaves img:nth-child(5) {
+  left: 50%;  
+  animation: animate 15s linear infinite;
+  animation-delay: 5s;
+}
+.landing .leaves img:nth-child(6) {
+  left: 60%;  
+  animation-delay: 2s;
+  animation: animate 10s linear infinite;
+}
+.landing .leaves img:nth-child(7) {
+  left: 70%;  
+  animation-delay: 6s;
+  animation: animate 15s linear infinite;
+}
+.landing .leaves img:nth-child(8) {
+  animation: animate 15s linear infinite;
+  left: 80%;  
+}
+.landing .leaves img:nth-child(9) {
+  animation: animate 15s linear infinite;
+  left: 80%;  
+}
+.landing .leaves img:nth-child(10) {
+  animation: animate 15s linear infinite;
+  left: 80%;  
+}
+.landing .leaves img:nth-child(11) {
+  animation: animate 15s linear infinite;
+  left: 80%;  
+}
+.landing .leaves img:nth-child(12) {
+  animation: animate 10s linear infinite;left: 80%;  
 }
 .landing .leaves img:nth-child(13) {
   animation: animate 6s linear infinite;
@@ -238,3 +446,28 @@ footer .copy-right ion-icon {
   }
 }
 }
+
+
+svg {
+ width: 400px; 
+ height: 100px;
+}
+svg text {
+ animation: stroke 5s infinite alternate;
+ stroke-width: 2;
+ stroke: #EE7600;
+}
+@keyframes stroke {
+ 0%   {
+  fill: rgba(238,118,0,0); stroke: rgba(238,118,0,1);
+  stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+ }
+ 70%  {fill: rgba(238,118,0,0); stroke: rgba(238,118,0,1); }
+ 80%  {fill: rgba(238,118,0,0); stroke: rgba(238,118,0,1); stroke-width: 3; }
+ 100% {
+  fill: rgba(238,118,0,1); stroke: rgba(238,118,0,0);
+  stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+ }
+}
+
+.wrapper {background-color: transparent};
