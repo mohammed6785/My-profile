@@ -153,7 +153,7 @@ header a.active {
   overflow: hidden;
   }
 
-.landing img {
+.landing .leaves img {
   position: absolute; 
   top: -90px;
 }
