@@ -30,8 +30,6 @@ h1 {
   color: var(--text-color);
 }
 h1 span {
-  font-family: 'IBM Plex Sans Arabic', sans-serif;
-  font-family: 'Sail', cursive;
   color: var(--main-color);
 }
 h2 {
@@ -217,7 +215,7 @@ header a.active {
   left: 80%;  
 }
 .landing .text {
-  position: absolute; 
+  position: relative; 
   margin: 10px 0; 
   text-align: center; 
 }  
